@@ -67,7 +67,7 @@ input:focus,select:focus,button:focus-visible,a:focus-visible{outline:3px solid 
 const $=id=>document.getElementById(id);
 /* Used only if the server can’t be reached (e.g. file opened directly) */
 let cfg={upi:"him.mayne@okhdfcbank",payee:"Himanshu Mayne",org:"Finance Lab",
-  courses:[{name:"Course 1",fee:1500},{name:"Course 2",fee:1500},{name:"Course 3",fee:1500}]};
+  courses:[{name:"Course 1",fee:1500}]};
 function fill(){$("course").innerHTML='<option value="">Select a course</option>'+cfg.courses.map(c=>`<option value="${c.name}">${c.name}</option>`).join("")}
 fill();
 fetch("/api/courses").then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{cfg=d;fill()}).catch(()=>{$("demo").style.display="block"});

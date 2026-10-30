@@ -3,7 +3,5 @@ export const ORG = "Finance Lab";   // add more courses below, each as { name: "
 export const UPI_ID = "him.mayne@okhdfcbank";
 export const PAYEE = "Himanshu Mayne";
 export const COURSES = [
-  { name: "Gst & Taxation", fee: 1500 },
-  { name: "Course 2", fee: 1500 },
-  { name: "Course 3", fee: 1500 }
+  { name: "Finance Lab", fee: 1500 }
 ];
